@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --all_transitions: all linear .35s;
+}
+
+body{
+  background: url('bgmain.jpg') no-repeat center/cover fixed;
+  height: 100vh;
+}
+
+.nav_bar{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav_items{
+  /* background: rgb(35, 45, 65); */
+  font-size: 1.9rem;
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  width: 10vw;
+  height: 7.5vh;
+  text-align: center;
+  text-decoration: none;
+}
+.contacts_bar{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* For the projects Page */
+.projects_container_main{
+  background: #18314f;
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+  flex-direction: row;
+  
+}
+.ch_f{
+  background: yellow;
+  opacity: 1;
+  color: white;
+  position: relative;
+  top: 170px;
+  width: 20vw;
+  height: 50vh;
+  font-size: 20px;
+  text-align: center;
+}
+.pr_container{
+  background-color: green;
+  position:relative;
+  left: 10vw;
+  width: 50vw;
+
+
+}
+.fm_items{
+  margin: auto;
+  padding: 10px;
+  width: fit-content;
+  transition: var(--all_transitions);
+}
+#one:hover,#two:hover,#three:hover{
+  text-decoration:underline;
+  transform: scale(1.5,1.5);
+}
+#one:hover{  
+  color: #30bced;
+}
+#two:hover{
+  color: rgb(94, 192, 94);
+}
+#three:hover{
+  color: #fff;
+}
+
+/* This is for the projectsdisplays */
+.pr_title_icon{
+  width: 4vw;
+  position: relative;
+  left: 23vw;
+  top: .5vh;
+
+}
+.pr_items_display{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: yellow;
+}
