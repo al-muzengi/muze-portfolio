@@ -1,16 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { all_projects } from '../data'
-import { faNode } from '@fortawesome/free-brands-svg-icons'
 
-const Nodeprojects = () => {
+const Fullstackprojects = () => {
   let projects = all_projects.filter((project) =>{
-    return project.framework !== "React" 
+    return project.framework == "Fullstack" 
   })
 return (
 <>
   <div className='pr_title_icon'>
-    <FontAwesomeIcon icon={faNode} size='5x'/>
+    <FontAwesomeIcon icon={faReact} size='5x'/>
   </div>
   <div className='pr_items_display'>
 {projects.map((project)=>{
@@ -21,9 +21,6 @@ return (
       <div className='description'>
         <p>{description}</p>
       </div>
-      <div className='links'>
-        <h4><a href="" target='_blank'>Source Code</a></h4>
-      </div>
     </div>
   )
 })}
@@ -32,4 +29,4 @@ return (
 )
 }
 
-export default Nodeprojects
+export default Fullstackprojects

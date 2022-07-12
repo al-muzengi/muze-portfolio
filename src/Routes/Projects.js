@@ -3,14 +3,16 @@ import { frameworks } from '../data'
 import Error from './Error'
 import Reactprojects from '../Components/reactprojects'
 import Nodeprojects from '../Components/nodeprojects'
+import Fullstackprojects from '../Components/fullstackprojects'
 
 const Projects = () => {
-  const [projects, setProjects] = useState('')
+  const [framework, setFramework] = useState(<Error/>)
   const handleToggle = (e) =>{
       switch(e.target.id){
-        case 'one': setProjects(<Reactprojects/>); break;
-        case 'two': setProjects(< Nodeprojects/>); break;
-        default: setProjects(<Error/>)
+        case 'one': setFramework(<Reactprojects/>); break;
+        case 'two': setFramework(< Nodeprojects/>); break;
+        case 'three': setFramework(< Fullstackprojects/>); break;
+        default: setFramework(<Error/>)
       }
   }
   return (
@@ -25,7 +27,7 @@ const Projects = () => {
         })}
       </div>
       <div className='pr_container'>
-        {projects}
+        {framework}
       </div>
     </div>
   )

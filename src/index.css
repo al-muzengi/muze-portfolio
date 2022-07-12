@@ -7,7 +7,9 @@
 }
 
 body{
-  background: url('bgmain.jpg') no-repeat center/cover fixed;
+  /* background-color: black; */
+  /* background: url('bgmain.jpg') repeat-y center/cover fixed; */
+  width: 100vw;
   height: 100vh;
 }
 
@@ -38,64 +40,3 @@ body{
 
 
 
-/* For the projects Page */
-.projects_container_main{
-  background: #18314f;
-  width: 100vw;
-  height: 87vh;
-  display: flex;
-  flex-direction: row;
-  
-}
-.ch_f{
-  background: yellow;
-  opacity: 1;
-  color: white;
-  position: relative;
-  top: 170px;
-  width: 20vw;
-  height: 50vh;
-  font-size: 20px;
-  text-align: center;
-}
-.pr_container{
-  background-color: green;
-  position:relative;
-  left: 10vw;
-  width: 50vw;
-
-
-}
-.fm_items{
-  margin: auto;
-  padding: 10px;
-  width: fit-content;
-  transition: var(--all_transitions);
-}
-#one:hover,#two:hover,#three:hover{
-  text-decoration:underline;
-  transform: scale(1.5,1.5);
-}
-#one:hover{  
-  color: #30bced;
-}
-#two:hover{
-  color: rgb(94, 192, 94);
-}
-#three:hover{
-  color: #fff;
-}
-
-/* This is for the projectsdisplays */
-.pr_title_icon{
-  width: 4vw;
-  position: relative;
-  left: 23vw;
-  top: .5vh;
-
-}
-.pr_items_display{
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: yellow;
-}
