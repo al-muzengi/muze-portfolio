@@ -4,13 +4,16 @@
 }
 :root{
   --all_transitions: all linear .35s;
+  --bg_color:#18314f;
+  --df_width:100vw;
+  --df_height:87vh;
 }
 
 body{
-  /* background-color: black; */
+  background-color: black;
   /* background: url('bgmain.jpg') repeat-y center/cover fixed; */
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
 
 .nav_bar{
@@ -18,10 +21,11 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  opacity: .8;
 }
 
 .nav_items{
-  /* background: rgb(35, 45, 65); */
+  background: rgb(35, 45, 65);
   font-size: 1.9rem;
   color: white;
   padding: 20px;
@@ -36,7 +40,24 @@ body{
   display: flex;
   justify-content: center;
 }
-
+.error_gif h1{
+  text-align: center;
+  position: relative;
+  top: 120px;
+  left: -185px;
+}
+.error_gif{
+  color: whitesmoke;
+  position: relative;
+  left: 20%;
+  margin:auto;
+}
+.error_gif p {
+  font-size: 1.4rem;
+  position: relative;
+  top: -120px;
+  left: 45px;
+}
 
 
 

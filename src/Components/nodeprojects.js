@@ -5,7 +5,7 @@ import { faNode } from '@fortawesome/free-brands-svg-icons'
 
 const Nodeprojects = () => {
   let projects = all_projects.filter((project) =>{
-    return project.framework !== "React" 
+    return project.framework == "Node" 
   })
 return (
 <>
@@ -21,7 +21,7 @@ return (
       <div className='description'>
         <p>{description}</p>
       </div>
-      <div className='links'>
+      <div className='node_links'>
         <h4><a href="" target='_blank'>Source Code</a></h4>
       </div>
     </div>

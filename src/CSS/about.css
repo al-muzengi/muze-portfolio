@@ -1,0 +1,5 @@
+.about_container{
+  background-color: var(--bg_color);
+  width: var(--df_width);
+  min-height: var(--df_height);
+}

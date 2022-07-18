@@ -1,14 +1,14 @@
 .projects_container_main{
   background: #18314f;
-  opacity: .8;
-  width: 100vw;
+  opacity: .9;
+  max-width: 100vw;
+  min-height: 87vh;
   display: flex;
   flex-direction: row;
 }
 
 /* The Projects Selection Div. */
 .ch_f{
-  background: yellow;
   opacity: 1;
   color: white;
   position: relative;
@@ -17,6 +17,9 @@
   height: 50vh;
   font-size: 20px;
   text-align: center;
+}
+.ch_f h1{
+  text-decoration: underline;
 }
 .fm_items{
   margin: auto;
@@ -41,10 +44,9 @@
 
 /* The Projects Display Div */
 .pr_container{
-  background-color: green;
   position:relative;
-  left: 10vw;
-  width: 50vw;
+  left: 6.2vw;
+  width: 48vw;
 }
 .pr_title_icon{
   width: 4vw;
@@ -56,28 +58,28 @@
 .pr_items_display{
   display: flex;
   flex-direction: column;
-  background-color: yellow;
 }
 .ind_project{
-  background-color: pink;
   border: 2px solid white;
-  padding: 30px;
+  padding: 15px;
 }
 
 .description{
-  background-color: red;
-  padding: 25px;
-
+  padding: 25px 0px;
+  font-size: 1.2rem;
 }
 
-.links{
+.links , .node_links{
   background-color: grey;
   display: flex;
   justify-content: space-evenly;
-  padding: 15px;
+  padding: 10px;
 }
-.links h4 a{
+.links h4 a , .node_links a{
   text-decoration: none;
   font-size: 1.3rem;
-
+}
+.node_links{
+  width: 10vw;
+  margin: auto;
 }

@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <div className='projects_container_main'>
       <div className='ch_f'>
-        <h1>PROJECTS</h1><br />
+        <h1>FRAMEWORKS</h1><br />
         {frameworks.map((fm) =>{
           const {id,title} = fm
           return(
