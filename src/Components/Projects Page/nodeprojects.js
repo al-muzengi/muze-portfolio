@@ -1,20 +1,24 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { all_projects } from '../data'
 import { faNode } from '@fortawesome/free-brands-svg-icons'
+import { all_projects } from '../../data'
+import { projectContext } from '../../Routes/Projects'
 
 const Nodeprojects = () => {
-  let projects = all_projects.filter((project) =>{
+   // The context is to be used in the fullstack version only. Simply interchange all_projects and projects
+  const {projects} = useContext(projectContext)
+  
+  let n_projects = all_projects.filter((project) =>{
     return project.framework == "Node" 
   })
 return (
 <>
   <div className='pr_title_icon'>
-    <FontAwesomeIcon icon={faNode} size='5x'/>
+    <FontAwesomeIcon icon={faNode} size='3x'/>
   </div>
   <div className='pr_items_display'>
-{projects.map((project)=>{
-  const {id,title,description,framework} = project
+{n_projects.map((project)=>{
+  const {id,title,description} = project
   return(
     <div key={id} className='ind_project'>
       <h1>{title}</h1><br />
@@ -22,7 +26,7 @@ return (
         <p>{description}</p>
       </div>
       <div className='node_links'>
-        <h4><a href="" target='_blank'>Source Code</a></h4>
+        <h4><a href="#" target='_blank'>Source Code</a></h4>
       </div>
     </div>
   )

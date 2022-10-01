@@ -16,6 +16,25 @@ export const nav_items = [
   }
 ]
 
+export const details = [
+  {
+    id:"one",
+    title:"Skills"
+  },
+  {
+    id:"two",
+    title:"Education"
+  },
+  {
+    id:"three",
+    title:"Experience"
+  }
+]
+
+export const skills = [
+  
+]
+
 export const frameworks =[
   {
     id:"one",
@@ -27,7 +46,7 @@ export const frameworks =[
   },
   {
     id:"three",
-    title:"FullStack Apps"
+    title:"M.E.R.N Stack Application"
   }
 ] 
 
@@ -35,37 +54,43 @@ export const all_projects = [
   {
     id:1,
     framework:"React",
-    title:"Portfolio Web-Application",
+    title:"Portfolio Application UI",
     description:"My portfolio which is technically the site you are navigating through at the moment.It is a project unto itself. It serves to show my invaluable skills in vital React topics and libraries. "
   },
   {
     id:2,
     framework:"React",
-    title:"SignUp Application FrontEnd",
-    description:"A simple signup web-application with the usual bells and whistles.Currently done with the UI. The next step would be to deal with the backend and database configuration for data persistence."
+    title:"SignUp Application UI",
+    description:"A signup page for new users and clients."
   },
   {
     id:3,
     framework:"React",
-    title:"SafeNotes FrontEnd",
-    description:"Working title. Current version is too simple to be proud of. Working on something a bit more interesting for the final version."
+    title:"Notes Application UI",
+    description:"A simple notes web-application. Allows for input of new notes and storage on a database.Provision for categories of notes and user authentication to be made soon."
   },
   {
     id:4,
     framework:"Node",
-    title:"SafeNotes Backend",
-    description:"Halfway done, i think. Routing and navigation works. Guess what's left would be the database."
+    title:"Notes Application",
+    description:"Backend configuration for the database. Data validation and access through a REST API. Notes storage via the cloud database MONGODB Atlas."
   },
   {
     id:5,
     framework:"Fullstack",
     title:"SafeNotes",
-    description:"The full glorious version would be here."
+    description:"The Fullstack Notes application."
   },
   {
     id:6,
     framework:"React",
     title:"Project MUZErips",
-    description:"This is the current working title for my very own illegal streaming and downloading web-application. Working solo has delayed progress and deployment and it is quite far from being even remotely functional.Though the display is coming together quite nicely and looking quite sexy if i might add. "
+    description:"An entertainment web-application.Provides access to movies and tv-shows to the users. Disclaimer: Does not host/copy/reproduce any copyrighted materials.Only indexes already existing files on the internet. "
+  },
+  {
+    id:7,
+    framework:"Node",
+    title:"Portfolio Application",
+    description:"Backend configuration. Data validation and access through a REST API. Data required for the Projects and About routes stored in MONGODB Atlas for the fullstack version. "
   }
 ]

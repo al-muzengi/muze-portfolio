@@ -6,7 +6,7 @@ const Error = () => {
       <div className='error_gif'>
           <h1>WOW! SUCH EMPTY.</h1>
         <img src="./Images/sadface.gif" alt="" />
-        <p>Choose from the list on the left to navigate to the projects</p>
+        <p>Choose from the list to navigate to the projects</p>
       </div>
     </div>
   )

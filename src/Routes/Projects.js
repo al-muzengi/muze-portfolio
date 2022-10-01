@@ -1,12 +1,32 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
+import axios from 'axios'
 import { frameworks } from '../data'
 import Error from './Error'
-import Reactprojects from '../Components/reactprojects'
-import Nodeprojects from '../Components/nodeprojects'
-import Fullstackprojects from '../Components/fullstackprojects'
+import Reactprojects from '../Components/Projects Page/reactprojects'
+import Nodeprojects from '../Components/Projects Page/nodeprojects'
+import Fullstackprojects from '../Components/Projects Page/fullstackprojects'
+
+export const projectContext = React.createContext()
 
 const Projects = () => {
   const [framework, setFramework] = useState(<Error/>)
+  const [projects,setProjects] = useState()
+
+  // To be used in the fullstack version.
+
+  // const fetchData = async () => {
+  //   const url = 'http://localhost:5000/api/projects/'
+  //   try {
+  //     const response = await axios(url)
+  //     setProjects(response.data)
+  //   } catch (error) {
+  //     console.log(error.resonse.status)      
+  //   }
+  // }
+  // useEffect(() =>{
+  //   fetchData()
+  // } ,[])
+
   const handleToggle = (e) =>{
       switch(e.target.id){
         case 'one': setFramework(<Reactprojects/>); break;
@@ -15,10 +35,11 @@ const Projects = () => {
         default: setFramework(<Error/>)
       }
   }
+
   return (
+    <projectContext.Provider value={{projects}}>
     <div className='projects_container_main'>
       <div className='ch_f'>
-        <h1>FRAMEWORKS</h1><br />
         {frameworks.map((fm) =>{
           const {id,title} = fm
           return(
@@ -30,6 +51,7 @@ const Projects = () => {
         {framework}
       </div>
     </div>
+    </projectContext.Provider>
   )
 }
 export default Projects

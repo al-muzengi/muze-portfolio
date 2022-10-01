@@ -1,6 +1,6 @@
 import React from 'react'
 import { nav_items } from '../data'
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -9,7 +9,9 @@ const Navbar = () => {
       const {title,id,link} = item
       return(
         <div key={id} >
-          <Link to={link} className="nav_items">{title}</Link>
+          <NavLink to={link} className="nav_items" style={({isActive}) => {
+            return {color:isActive? 'blue' : 'white'}
+          }}>{title}</NavLink>
         </div>
       )
     })}
